@@ -13,7 +13,7 @@ namespace util
     {
         const std::string formatSourceLocation(const std::string_view format, const std::source_location location)
         {
-            return std::format("({}:{}) `{}`:", location.file_name(), location.line(), location.column(), location.function_name());
+            return std::format("{}({}:{}) `{}`:", location.file_name(), location.line(), location.column(), location.function_name());
         }
     }
 }
